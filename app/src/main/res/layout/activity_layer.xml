@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xingmoquan.animation_star.LayerActivity">
+
+
+    <LinearLayout
+        android:id="@+id/views1"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/pic_bg"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/views2"
+        android:layout_width="200dp"
+        android:layout_height="200dip"
+        android:layout_below="@+id/views1"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/frame"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" />
+
+        <ImageView
+            android:id="@+id/mask"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/views2"
+        android:text="Start" />
+
+    <ImageView
+        android:id="@+id/showResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStart" />
+
+</RelativeLayout>

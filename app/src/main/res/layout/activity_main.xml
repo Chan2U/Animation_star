@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.xingmoquan.animation_star.MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:id="@+id/tv_an"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="Hello World!"
+        android:textSize="50sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_an_be"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_toRightOf="@id/tv_an"
+        android:text="BezierInterpolator"
+        android:textSize="50sp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rlly"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+
+        <com.xingmoquan.animation_star.util.StrokeTextView
+            android:id="@+id/tv_mua_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="hahahahahah"
+            android:layout_marginTop="40dp"
+            android:visibility="invisible"
+            app:borderTextColor="#000000" />
+
+
+        <ImageView
+            android:id="@+id/iv_heart"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@mipmap/big_mua"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:text="lalalalallllllllllllalalalalalallalalalallalallalalalallalallalalla"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:visibility="invisible" />
+
+    <View
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/tv"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/linear_gradient_layer"
+        android:visibility="invisible" />
+</RelativeLayout>

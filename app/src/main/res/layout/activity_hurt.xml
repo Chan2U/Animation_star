@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xingmoquan.animation_star.HurtActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="点击"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rlly_hurt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/iv_hurt3"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/hurt3"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/iv_hurt2"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/hurt2"
+            android:visibility="invisible"/>
+
+
+        <ImageView
+            android:id="@+id/iv_hurt1"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/hurt1"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <com.xingmoquan.animation_star.util.StrokeTextView
+        android:id="@+id/tv_hurt_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="hahahahahah"
+        android:visibility="invisible"
+        app:borderTextColor="#000000"
+        android:layout_marginTop="-10dp"
+        android:layout_alignTop="@id/rlly_hurt"/>
+
+</RelativeLayout>
